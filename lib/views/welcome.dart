@@ -25,7 +25,7 @@ class _WelcomeState extends State<Welcome> {
     dynamic resultant = await Serverdb.getTime();
     server_status = resultant;
     log("server_check$resultant");
-    if(server_status == true){
+    if (server_status == true) {
       Get.to(() => serverDown());
     }
   }
@@ -41,16 +41,11 @@ class _WelcomeState extends State<Welcome> {
         selected_language != null ? Locale(selected_language) : Locale("en");
     if (login_Value == true) {
       Get.to(() => Chat());
-      // Get.to(() => no_internet());
       await Get.updateLocale(selectedValue);
-    } else{
+    } else {
       Get.to(() => language_view());
-      // Get.to(() => no_internet());
-
     }
   }
-
-
 
   get_started_button_event() async {
     log("event_start");
@@ -59,7 +54,6 @@ class _WelcomeState extends State<Welcome> {
     // FirebaseCrashlytics.instance.crash();
     log("event_end");
   }
-
 
   @override
   void initState() {

@@ -232,20 +232,20 @@ class _ChatState extends State<Chat> with SingleTickerProviderStateMixin {
                   ],
                 ),
               ),
-              TabBar(
-                isScrollable: true,
-                indicator: BoxDecoration(
-                  color: Colors.transparent,
-                ),
-                indicatorPadding: EdgeInsets.symmetric(horizontal: 0.0),
-                labelColor: Colors.blue,
-                unselectedLabelColor: Colors.grey,
-                tabs: [
-                  CustomTab(text: 'All'),
-                  CustomTab(text: 'Friends'),
-                  CustomTab(text: 'Buddies'),
-                ],
-              ),
+              // TabBar(
+              //   isScrollable: true,
+              //   indicator: BoxDecoration(
+              //     color: Colors.transparent,
+              //   ),
+              //   indicatorPadding: EdgeInsets.symmetric(horizontal: 0.0),
+              //   labelColor: Colors.blue,
+              //   unselectedLabelColor: Colors.grey,
+              //   tabs: [
+              //     CustomTab(text: 'All'),
+              //     CustomTab(text: 'Friends'),
+              //     CustomTab(text: 'Buddy'),
+              //   ],
+              // ),
               Expanded(
                 child: TabBarView(
                   children: [
